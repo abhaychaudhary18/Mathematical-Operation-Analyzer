@@ -1,92 +1,107 @@
-﻿# Mathematical-Operation-Analyzer
 🧮 Mathematical Operation Analyzer
 
-A Java-based desktop application developed using Maven and Swing to perform core mathematical operations such as addition, subtraction, multiplication, and division through an interactive Graphical User Interface (GUI). The project demonstrates clean software design and Maven-based build automation, making it a great model for Java development and DevOps workflow integration.
+Mathematical Operation Analyzer is a Java-based desktop application that performs core arithmetic operations using an intuitive Graphical User Interface (GUI).
+The project is built using Apache Maven and follows industry-standard DevOps practices with GitHub Actions CI pipeline for automated builds.
 
 🚀 Features
 
-✔ GUI-based calculator (user-friendly interface)
-✔ Performs Addition, Subtraction, Multiplication, Division
-✔ Handles invalid inputs and division-by-zero error
-✔ Packaged as an Executable JAR (can run by double-click)
-✔ Built and managed using Apache Maven
-✔ Fully Object-Oriented & modular code
+User-friendly GUI built using Java Swing
 
-🔧 Tech Stack
-Layer	Technology Used
-Programming Language	Java (JDK 17)
+Supports Addition, Subtraction, Multiplication, Division
+
+Handles invalid inputs (e.g., division by zero)
+
+Fully object-oriented design
+
+Executable JAR — runs on any system with Java installed
+
+Continuous Integration enabled via GitHub Actions
+
+🛠️ Tech Stack
+Component	Technology
+Language	Java (JDK 17)
 Build Tool	Apache Maven
-UI Framework	Java Swing
-Version Control	Git & GitHub
+CI/CD	GitHub Actions
+GUI Library	Java Swing
+Version Control	Git + GitHub
 📂 Project Structure
 calculator-app
  ├─ src
  │  ├─ main
  │  │  └─ java/com/abhay/calculator
- │  │      ├─ App.java              → CLI Version (optional)
- │  │      └─ CalculatorGUI.java    → GUI Main Application
+ │  │      ├─ App.java
+ │  │      └─ CalculatorGUI.java   ← main GUI
  │  └─ test/java/com/abhay/calculator
  │     └─ AppTest.java
  ├─ pom.xml
- └─ target/calculator-app-1.0-SNAPSHOT.jar
+ └─ README.md
 
-▶ How to Run the Project
-Using Maven
+▶ How to Run
+🔹 Option 1 — Using Maven (recommended)
 mvn exec:java
 
-Using double-click JAR
+🔹 Option 2 — Run the JAR (double-click supported)
 
-Go to target/
+First build:
 
-Double-click:
-
-calculator-app-1.0-SNAPSHOT.jar
+mvn clean package
 
 
-or via terminal/cmd:
+Then run:
 
 java -jar target/calculator-app-1.0-SNAPSHOT.jar
 
-🖥 GUI Overview
+🖥 GUI Snapshot
 
-The application window includes:
+The application includes:
 
-Input field for first number
+Input for Number 1
 
-Input field for second number
+Input for Number 2
 
-Dropdown menu to choose operation
+Operation selector (+ – × ÷)
 
-"Calculate" button
+Calculate button
 
-Output display label
+Result display label
 
-📌 Learning Outcomes / What this project demonstrates
+🤝 DevOps Integration
 
-🔹 Java project structure and modular design
-🔹 Maven lifecycle — clean, build, package, install
-🔹 Maven dependencies & plugins
-🔹 GUI application development using Swing
-🔹 Git + GitHub version control workflow
+This project includes a GitHub Actions CI workflow that automatically:
 
-🌱 Future Enhancements (optional)
+Checks out source code
 
-Scientific calculator functions (log, sin, cos, power)
+Installs JDK 17
 
-Dark/light theme mode
+Builds the project using Maven
 
-Calculation history / export to text or PDF
+Verifies successful compilation
 
-Deploy as web application using Spring Boot
+Status badge at the top of this README reflects real-time build status.
 
-Dockerize the project for DevOps learning
+🌱 Future Enhancements
 
-🤝 Contributing
+Planned upgrades for next versions:
 
-Pull requests and improvements are welcome!
+Scientific calculator mode (log, sin, cos, power)
 
-📩 Author
+Calculation history
+
+Light/Dark UI theme
+
+Web version using Spring Boot
+
+Containerization using Docker
+
+Deployment to AWS / Render
+
+👨‍💻 Author
 
 Abhay Chaudhary
-📍 Developer – Java | Maven | DevOps
+📌 Java | Maven | GitHub Actions | DevOps Enthusiast
 🔗 GitHub: @abhaychaudhary18
+
+⭐ Contributions
+
+Pull requests and suggestions are welcome!
+If you like this project, don’t forget to star ⭐ the repository.
